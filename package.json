@@ -1,23 +1,26 @@
 {
-    "name": "generator-ezhtml",
-    "title": "Generator ezHTML",
-    "version": "0.1.0",
-    "description": "Generates HTML structure for templating",
-    "main": "app/index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/malas34/generator-ezhtml"
-    },
-    "author": {
-        "name": "Matthieu Lassalvy",
-        "email": "malas34.github@gmail.com"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/malas34/generator-ezhtml/issues"
-    },
-    "homepage": "https://github.com/malas34/generator-ezhtml"
+  "name": "generator-ezhtml",
+  "title": "Generator ezHTML",
+  "version": "0.1.0",
+  "description": "Generates HTML structure for templating",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malas34/generator-ezhtml"
+  },
+  "author": {
+    "name": "Matthieu Lassalvy",
+    "email": "malas34.github@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malas34/generator-ezhtml/issues"
+  },
+  "homepage": "https://github.com/malas34/generator-ezhtml",
+  "dependencies": {
+    "yeoman-generator": "^0.17.7"
+  }
 }
