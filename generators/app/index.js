@@ -21,7 +21,7 @@
 
 */
         prompting: {
-            askFor: function () {
+            ask: function () {
                 var done = this.async(),
                     prompts = [{
                         type: 'input',
@@ -52,16 +52,28 @@
          *
          */
         configuring: {
-            createGitRepository: function(){
-                if (this.answers.git){
-                    this.spawnCommand('git', ['init']);
+
+            repository: function () {
+                if (this.answers.git) {
+                    this.composeWith('ezhtml:repository');
                 }
             },
-            createGruntfile: function(){
-            },
+
+            gruntfile: function () {
+
+            }
+        },
+
+        /**
+         *
+         *
+         *
+         */
+        writing: {
+
             // creation des fichiers de config project
             // .jshintrc, .gitignore, csslintrc...
-            copyProjectFiles: function () {
+            projectFiles: function () {
                 var $this = this;
                 var files = [
                     '.gitignore',
@@ -75,21 +87,15 @@
                     }
                 });
             },
+
             // creation des dossiers
-            createProjectFolders: function () {
+            projectFolders: function () {
                 this.mkdir('dev');
                 this.mkdir('debug');
                 this.mkdir('prod');
-            }
-        },
+            },
 
-        /**
-         *
-         *
-         *
-         */
-        writing: {
-            saveYoConfig: function () {
+            yoConfig: function () {
                 var config = {
                     name: this.answers.name,
                     description: this.answers.description
