@@ -1,0 +1,52 @@
+/** -----------------------------------------------------
+ *
+ * HTML
+ *
+ */
+
+body, html{
+    min-height: 100%;
+}
+
+/** -----------------------------------------------------
+ *
+ * Classes
+ *
+ */
+
+.clearfix{
+    .clearfixed();
+}
+
+.hide{
+    display: none;
+    visibility: hidden;
+}
+
+.f-left,
+.f-right{
+    width: auto;
+    display:block;
+}
+
+.f-left{
+    .floating(left);
+}
+
+.f-right{
+    .floating(right);
+}
+
+/** -----------------------------------------------------
+ *
+ * Generics
+ *
+ */
+
+ul{
+    &.clearfix{
+        li{
+            .float();
+        }
+    }
+}

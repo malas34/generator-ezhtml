@@ -1,0 +1,13 @@
+tests:
+  - jshint
+  - jasmine_node
+documentation:
+  - tests
+  - markdown
+build:
+  - documentation
+  - less:compile
+  - mustacher:compile
+default:
+  - tests
+  - watch

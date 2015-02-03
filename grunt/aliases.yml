@@ -1,0 +1,9 @@
+tests:
+  - jshint
+  - jasmine_node
+documentation:
+  - tests
+  - markdown
+default:
+  - tests
+  - watch

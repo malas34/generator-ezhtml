@@ -1,31 +1,41 @@
 {
-    "name": "generator-ezhtml",
-    "title": "Generator ezHTML",
-    "version": "0.1.0",
-    "description": "Generates HTML structure for templating",
-    "main": "generators/app/index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/malas34/generator-ezhtml"
-    },
-    "author": {
-        "name": "Matthieu Lassalvy",
-        "email": "malas34.github@gmail.com"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/malas34/generator-ezhtml/issues"
-    },
-    "homepage": "https://github.com/malas34/generator-ezhtml",
-    "dependencies": {
-        "yeoman-generator": "^0.17.7",
-        "yosay": ">=1.0.0"
-    },
-    "keywords": [
-    "yeoman-generator",
-    "html"
-  ]
+  "name": "generator-ezhtml",
+  "version": "0.1.0",
+  "description": "Generate HTML/less/js/handlebars project structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt jasmine_node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sixertoy/generator-ezhtml"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": {
+    "name": "sixertoy",
+    "email": "sixertoy.github@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sixertoy/generator-ezhtml/issues"
+  },
+  "homepage": "https://github.com/sixertoy/generator-ezhtml",
+  "dependencies": {
+    "q": "^1.1.2",
+    "appbones": "^0.1.6",
+    "yosay": "^1.0.2",
+    "yeoman-generator": "^0.18.7"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "grunt": "^0.4.5",
+    "grunt-bump": "0.0.16",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jasmine-node": "git://github.com/sixertoy/grunt-jasmine-node",
+    "grunt-markdown": "^0.6.1",
+    "load-grunt-config": "^0.16.0"
+  }
 }

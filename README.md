@@ -1,4 +1,7 @@
-Generator ezHTML
-================
+# generator-ezhtml
 
-Generates HTML structure for templating
+* Place your project's description here
+
+## Install
+
+## Usage

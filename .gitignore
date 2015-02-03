@@ -76,7 +76,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -135,16 +136,15 @@ coverage
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
+# node-waf configuration
+.lock-wscript
+
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
 # Dependency directory
-# Commenting this out is preferred by some people, see
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
-
-# Users Environment Variables
-.lock-wscript
 
 
 ### Archives ###
@@ -192,3 +192,12 @@ node_modules
 # the music source as "<Filename> copy.mus"
 *copy.mus
 
+
+### Yeoman ###
+node_modules/
+bower_components/
+*.log
+.yo-rc.json
+
+build/
+dist/
