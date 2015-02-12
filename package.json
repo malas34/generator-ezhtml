@@ -23,10 +23,12 @@
   },
   "homepage": "https://github.com/sixertoy/generator-ezhtml",
   "dependencies": {
+    "appbones": "^0.2.3",
+    "lodash": "^3.1.0",
     "q": "^1.1.2",
-    "appbones": "^0.1.6",
-    "yosay": "^1.0.2",
-    "yeoman-generator": "^0.18.7"
+    "slugify": "^0.1.0",
+    "yeoman-generator": "^0.18.8",
+    "yosay": "^1.0.2"
   },
   "devDependencies": {
     "coveralls": "^2.11.2",
