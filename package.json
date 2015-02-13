@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/sixertoy/generator-ezhtml",
   "dependencies": {
-    "appbones": "^0.2.3",
     "lodash": "^3.1.0",
     "q": "^1.1.2",
     "slugify": "^0.1.0",

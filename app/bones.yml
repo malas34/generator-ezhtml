@@ -20,8 +20,8 @@ root:
         - less:
           - [__.less, base.less, styles.less]
         - js:
-          - [html5shiv.js]
           - vendor
+            - [html5shiv.js]
         - html:
           - [_index.tpl, __.tpl]
         - partials:
