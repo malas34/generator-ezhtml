@@ -23,7 +23,6 @@
     },
     "homepage": "<%= project.repository %>",
     "dependencies": {
-
     },
     "devDependencies": {
         "coveralls": "^2.11.2",
