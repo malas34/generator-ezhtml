@@ -47,10 +47,32 @@
                 prompts = [],
                 done = this.async();
 
+            // css frameworks
             prompts.push({
                 type: 'list',
-                name: 'frameworks',
-                message: 'Choose your CSS Framework',
+                name: 'reset',
+                message: 'Choose a CSS reset',
+                choices: [{
+                    name: 'Eric Meyer\'s reset',
+                    value: 'reset-css',
+                    checked: true
+                }, {
+                    name: 'Normalize',
+                    value: 'normalize-css'
+                }, {
+                    name: 'Cordova reset',
+                    value: 'cordova-css-reset'
+                }, {
+                    name: 'None',
+                    value: 'false'
+                }]
+            });
+
+            // css frameworks
+            prompts.push({
+                type: 'list',
+                name: 'framework',
+                message: 'Choose a CSS Framework',
                 choices: [{
                     name: 'Unsemantic',
                     value: 'unsemantic',
@@ -68,17 +90,31 @@
             });
 
             this.prompt(prompts, function (values) {
-                this.config.set('styles', {});
+                this.config.set('styles', {
+                    reset: values.reset,
+                    framework: values.framework
+                });
                 done();
             }.bind(this));
 
         },
 
-        configuring: function () {},
-
-        writing: function () {},
-
-        install: function () {},
+        install: function () {
+            var components = [],
+                styles = this.config.get('styles');
+            //reset
+            if (styles.reset) {
+                components.push(styles.reset);
+            }
+            // framework
+            if (styles.framework) {
+                components.push(styles.framework);
+            }
+            // bower install
+            if (components.length) {
+                this.bowerInstall(components);
+            }
+        },
 
         end: function () {}
 

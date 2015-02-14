@@ -110,7 +110,7 @@
             // this.composeWith('ezhtml:conditionnals', {});
             if (!this.options['skip-install']) {
                 this.composeWith('ezhtml:scripts', {});
-                // this.composeWith('ezhtml:styles', {});
+                this.composeWith('ezhtml:styles', {});
             }
         },
 
@@ -129,8 +129,7 @@
 
         install: function () {
             if (!this.options['skip-install']) {
-                // this.npmInstall();
-                // this.bowerInstall();
+                this.npmInstall();
             }
         },
 

@@ -6,6 +6,7 @@ documentation:
   - markdown
 build:
   - documentation
+  - wiredep
   - less:compile
   - mustacher:compile
 default:

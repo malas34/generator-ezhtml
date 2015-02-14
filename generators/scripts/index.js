@@ -50,10 +50,18 @@
                 prompts = [],
                 done = this.async();
 
+            // HTML5Shiv
+            prompts.push({
+                type: 'confirm',
+                name: 'html5shiv',
+                message: 'Use HTML5Shiv ?',
+                default: true
+            });
+
             // jQuery version
             prompts.push({
                 type: 'list',
-                name: 'jquery_version',
+                name: 'jquery',
                 message: 'Choose your jQuery Version',
                 choices: [{
                     name: 'jQuery 1.x',
@@ -62,13 +70,16 @@
                 }, {
                     name: 'jQuery 2.x',
                     value: 'jquery#2'
+                }, {
+                    name: 'None',
+                    value: false
                 }]
             });
 
             // jQuery Plugins
             prompts.push({
                 type: 'checkbox',
-                name: 'js_plugins',
+                name: 'plugins',
                 message: 'Select jQuery plugins',
                 choices: [{
                     name: 'ColorBox',
@@ -96,22 +107,32 @@
 
             this.prompt(prompts, function (values) {
                 this.config.set('scripts', {
-                    jquery: values.jquery_version,
-                    plugins: values.js_plugins
+                    jquery: values.jquery,
+                    plugins: values.plugins,
+                    html5shiv: values.html5shiv
                 });
                 done();
             }.bind(this));
 
         },
 
-        configuring: function () {},
-
-        writing: function () {},
-
         install: function () {
-            var scripts =  this.config.get('scripts');
-            scripts.plugins.push(scripts.jquery);
-            this.bowerInstall(scripts.plugins);
+            var components = [],
+                scripts = this.config.get('scripts');
+            // html5shiv
+            if (scripts.html5shiv) {
+                components.push('html5shiv');
+            }
+            // jquery
+            if (scripts.jquery) {
+                components.push(scripts.jquery);
+            }
+            // html5shiv
+            if (scripts.plugins.length) {
+                components = components.concat(scripts.plugins);
+            }
+            // bower install
+            this.bowerInstall(components);
         },
 
         end: function () {}

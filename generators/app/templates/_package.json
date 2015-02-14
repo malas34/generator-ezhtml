@@ -35,6 +35,7 @@
         "grunt-jasmine-node": "git://github.com/sixertoy/grunt-jasmine-node",
         "grunt-markdown": "^0.6.1",
         "grunt-mustacher": "^1.3.12",
+        "grunt-wiredep": "^2.0.0",
         "load-grunt-config": "^0.16.0"
     }
 }

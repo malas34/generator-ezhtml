@@ -1,13 +1,13 @@
 ---
 # project folders
 root:
-    - [CHANGELOG.md, _Gruntfile.js, _README.md, jasmine-node, _.editorconfig, _.gitignore, _.gitattributes, _.jshintrc, _package.json, _LICENSE-MIT, _.travis.yml]
+    - [CHANGELOG.md, _Gruntfile.js, _README.md, jasmine-node, _.editorconfig, _.gitignore, _.gitattributes, _.csslintrc, _.jshintrc, _package.json, _LICENSE-MIT, _.travis.yml]
     - docs:
         - src
         - html
         - [_page.tpl]
     - grunt:
-        - [_banner.tpl, aliases.yml, bump.js, jasmine_node.js, jshint.js, markdown.js, watch.js, less.js, mustacher.js, copy.js]
+        - [_banner.tpl, aliases.yml, bump.js, jasmine_node.js, jshint.js, markdown.js, watch.js, less.js, mustacher.js, copy.js, wiredep.js]
     - tests:
         - fixtures
         - expected
