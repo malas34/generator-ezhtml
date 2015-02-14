@@ -132,7 +132,9 @@
                 components = components.concat(scripts.plugins);
             }
             // bower install
-            this.bowerInstall(components);
+            this.bowerInstall(components, {
+                save: true
+            });
         },
 
         end: function () {}

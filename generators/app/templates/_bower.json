@@ -1,0 +1,19 @@
+{
+    "name": "<%= project.name %>",
+    "version": "0.0.0",
+    "main": "public/index.html",
+    "description": "<%= project.description %>",
+    "authors": [
+        "<%= author.name %> <<%= author.email %>>"
+    ],
+    "keywords": "",
+    "homepage": "",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

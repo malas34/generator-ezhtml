@@ -112,7 +112,9 @@
             }
             // bower install
             if (components.length) {
-                this.bowerInstall(components);
+                this.bowerInstall(components, {
+                    save: true
+                });
             }
         },
 

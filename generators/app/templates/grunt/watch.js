@@ -7,11 +7,19 @@ module.exports = {
         livereloadOnError: false
     },
     less: {
-        files: ['./src/partials/**/*.hbs', './src/html/s*.tpl'],
-        tasks: ['less:compile']
+        files: ['./src/less/**/*.less'],
+        tasks: ['less:dev']
+    },
+    css: {
+        files: ['./src/css/**/*.css'],
+        tasks: ['autoprefixer', 'cssmin:dev']
     },
     mustacher: {
         files: ['./src/partials/**/*.hbs', './src/html/s*.tpl'],
-        tasks: ['mustacher:compile']
+        tasks: ['mustacher:dev']
+    },
+    vendor: {
+        files: ['./bower.json'],
+        tasks: ['wiredep', 'bower_main', 'cssmin:vendor', 'uglify:vendor', 'clean']
     }
 };

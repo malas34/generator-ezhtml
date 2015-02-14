@@ -5,10 +5,13 @@ documentation:
   - tests
   - markdown
 build:
-  - documentation
   - wiredep
-  - less:compile
-  - mustacher:compile
+  - bower_main
+  - cssmin:vendor
+  - uglify:vendor
+compile:
+  - less:dev
+  - autoprefixer:dev
 default:
   - tests
   - watch

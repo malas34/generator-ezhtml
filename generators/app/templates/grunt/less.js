@@ -2,11 +2,11 @@
 /*global module */
 module.exports = {
     options: {
-        compress: true
+        compress: false
     },
-    compile: {
+    dev: {
         files: {
-            "./public/css/styles.css": "./src/less/styles.less"
+            "./tmp/css/styles.css": "./src/less/styles.less"
         }
     }
 };
