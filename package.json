@@ -1,6 +1,6 @@
 {
   "name": "generator-ezhtml",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Generate HTML/less/js/handlebars project structure",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/sixertoy/generator-ezhtml",
   "dependencies": {
-    "appbones": "^0.2.8",
+    "appbones": "^0.2.9",
     "lodash": "^3.1.0",
     "q": "^1.1.2",
     "slugify": "^0.1.0",

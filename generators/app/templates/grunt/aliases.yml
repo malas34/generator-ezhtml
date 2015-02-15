@@ -4,14 +4,18 @@ tests:
 documentation:
   - tests
   - markdown
-build:
+vendor:
   - wiredep
   - bower_main
   - cssmin:vendor
   - uglify:vendor
-compile:
-  - less:dev
+  - clean:vendor
+build:
+  - tests
+  - less
+  - copy:css
   - autoprefixer:dev
+  - clean:css
 default:
   - tests
   - watch

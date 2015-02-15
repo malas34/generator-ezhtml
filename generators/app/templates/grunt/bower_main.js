@@ -3,7 +3,9 @@
 module.exports = {
     copy: {
         options: {
-            dest: 'tmp/bower'
+            // copy bower main compoments
+            // tmp/vendor folder
+            dest: 'tmp/vendor'
         }
     }
 };

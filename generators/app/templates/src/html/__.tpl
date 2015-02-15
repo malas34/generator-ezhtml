@@ -2,16 +2,14 @@
 <html lang="fr">
 
 <head>
-    {{$include 'head/metas'}}
     <title></title>
-    {{$include 'head/stylesheets'}}
-    {{$include 'head/scripts'}}
+    {{$include 'body_head'}}
 </head>
 
 <body class="">
 
     <div id="before-body">
-        {{$include 'before_body'}}
+        {{$include 'body_before'}}
     </div>
 
     <div id="page">
@@ -21,7 +19,7 @@
     </div>
 
     <div id="after-body">
-        {{$include 'after_body'}}
+        {{$include 'body_after'}}
     </div>
 
 </body>

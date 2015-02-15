@@ -6,7 +6,7 @@ module.exports = {
             expand: true,
             flatten: true,
             cwd: '',
-            src: ['tmp/bower/**/*.css'],
+            src: ['tmp/vendor/**/*.css'],
             dest: 'public/css/vendor',
             ext: '.min.css'
         }]

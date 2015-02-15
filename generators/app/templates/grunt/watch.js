@@ -6,13 +6,17 @@ module.exports = {
         livereload: 1337,
         livereloadOnError: false
     },
+    js: {
+        files: ['./src/js/**/*.js'],
+        tasks: ['clean:js', 'copy:js']
+    },
     less: {
         files: ['./src/less/**/*.less'],
-        tasks: ['less:dev']
+        tasks: ['clean:css', 'less', 'autoprefixer:dev']
     },
     css: {
         files: ['./src/css/**/*.css'],
-        tasks: ['autoprefixer', 'cssmin:dev']
+        tasks: ['clean:css', 'copy:css', 'autoprefixer:dev']
     },
     mustacher: {
         files: ['./src/partials/**/*.hbs', './src/html/s*.tpl'],
@@ -20,6 +24,6 @@ module.exports = {
     },
     vendor: {
         files: ['./bower.json'],
-        tasks: ['wiredep', 'bower_main', 'cssmin:vendor', 'uglify:vendor', 'clean']
+        tasks: ['wiredep', 'clean:vendor', 'bower_main', 'cssmin:vendor', 'uglify:vendor']
     }
 };

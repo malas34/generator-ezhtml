@@ -7,7 +7,7 @@ module.exports = {
             flatten: true,
             cwd: '',
             ext: '.min.js',
-            src: ['tmp/bower/**/*.js'],
+            src: ['tmp/vendor/**/*.js'],
             dest: 'public/js/vendor'
         }]
     }

@@ -6,7 +6,7 @@ module.exports = {
         cascade: false,
         browsers: ['last 2 versions', 'ie 8', 'ie 9']
     },
-    dev:{
+    dev: {
         expand: true,
         flatten: true,
         src: 'tmp/css/*.css',

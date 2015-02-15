@@ -7,7 +7,7 @@ root:
         - html
         - [_page.tpl]
     - grunt:
-        - [_banner.tpl, aliases.yml, bump.js, jasmine_node.js, jshint.js, markdown.js, watch.js, less.js, mustacher.js, uglify.js, clean.js, cssmin.js, wiredep.js, bower_main.js, autoprefixer.js]
+        - [_banner.tpl, aliases.yml, bump.js, jasmine_node.js, jshint.js, markdown.js, watch.js, less.js, mustacher.js, uglify.js, clean.js, cssmin.js, wiredep.js, bower_main.js, autoprefixer.js, copy.js]
     - tests:
         - fixtures
         - expected
@@ -20,6 +20,7 @@ root:
         - less:
           - [__.less, base.less, styles.less]
         - js:
+          - [app.js]
           - vendor
         - html:
           - [_index.tpl, __.tpl]
@@ -34,4 +35,5 @@ root:
         - vendor
       - html
       - images
-    - bin:
+    - bin
+    - tmp
