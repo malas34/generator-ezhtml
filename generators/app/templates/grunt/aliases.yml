@@ -16,6 +16,12 @@ build:
   - copy:css
   - autoprefixer:dev
   - clean:css
+  - mustacher:dev
+compile:
+    - mustacher:dev
 default:
   - tests
   - watch
+serve:
+  - tests
+  - connect

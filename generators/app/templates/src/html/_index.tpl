@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
+<head>  
     <title></title>
     {{$include 'body_head'}}
 </head>
@@ -20,8 +20,9 @@
 
     <div id="after-body">
         {{$include 'body_after'}}
+        {{$livereload 1337}}
     </div>
-
-</body>
+ 
+</body> 
 
 </html>

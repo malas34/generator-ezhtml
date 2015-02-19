@@ -24,11 +24,11 @@
                         replace: {
                             js: function (filePath) {
                                 file = Path.basename(filePath);
-                                return '<script type="text/javascript" src="public/js/vendor/' + file + '"></script>';
+                                return '<script type="text/javascript" src="//js/vendor/' + file + '"></script>';
                             },
                             css: function (filePath) {
                                 file = Path.basename(filePath);
-                                return '<link rel="stylesheet" type="text/css" href="public/css/vendor/' + file + '" />';
+                                return '<link rel="stylesheet" type="text/css" href="//css/vendor/' + file + '" />';
                             }
                         }
                     }
