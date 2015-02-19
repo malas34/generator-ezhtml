@@ -5,16 +5,18 @@ module.exports = {
         files: [{
             expand: true,
             flatten: true,
-            src: ['src/css/*'],
-            dest: 'tmp/css/'
+            filter: 'isFile',
+            dest: 'tmp/css/',
+            src: ['src/css/**']
         }]
     },
     js: {
         files: [{
             expand: true,
             flatten: false,
-            src: ['src/js/*'],
-            dest: 'public/js/'
+            filter: 'isFile',
+            dest: 'public/js/',
+            src: ['src/js/**'],
         }]
     }
 };

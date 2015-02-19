@@ -9,7 +9,7 @@ module.exports = {
     dev: {
         expand: true,
         flatten: true,
-        src: 'tmp/css/*.css',
-        dest: 'public/css/'
+        dest: 'public/css/',
+        src: 'tmp/css/**/*.css'
     }
 };
