@@ -7,7 +7,7 @@ root:
         - html
         - [_page.tpl]
     - grunt:
-        - [_banner.tpl, aliases.yml, bump.js, jasmine_node.js, jshint.js, markdown.js, watch.js, less.js, mustacher.js, uglify.js, clean.js, cssmin.js, wiredep.js, bower_main.js, autoprefixer.js, copy.js]
+        - [_banner.tpl, aliases.yml, bump.js, jasmine_node.js, jshint.js, markdown.js, watch.js, less.js, mustacher.js, uglify.js, clean.js, cssmin.js, wiredep.js, bower_main.js, autoprefixer.js, copy.js, connect.js]
     - tests:
         - fixtures
         - expected
