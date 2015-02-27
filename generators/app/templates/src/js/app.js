@@ -1,5 +1,5 @@
 /*jshint plusplus: true, indent:4 */
-/*global jQuery document */
+/*global jQuery, document */
 (function ($) {
 
     'use strict';
