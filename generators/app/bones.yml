@@ -25,9 +25,7 @@ root:
         - html:
           - [_index.tpl, __.tpl]
         - partials:
-          - [after_body.hbs, beofre_body.hbs, footer.hbs]
-          - head:
-            - [scripts.hbs, metas.hbs, stylesheets.hbs]
+          - [_body_head.hbs, body_after.hbs, body_before.hbs, footer.hbs]
     - public:
       - css:
         - vendor

@@ -13,7 +13,7 @@
             ],
             options: {
                 ignorePath: /^(\/|\.+)+(bower_components\/)/,
-                exclude: ['unsemantic-grid-responsive-no-ie7.css'],
+                exclude: ['unsemantic-grid-responsive-no-ie7.css', 'html5shiv.js'],
                 fileTypes: {
                     hbs: {
                         block: /(([ \t]*)<!--\s*bower:*(\S*)\s*-->)(\n|\r|.)*?(<!--\s*endbower\s*-->)/gi,

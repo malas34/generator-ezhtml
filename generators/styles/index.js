@@ -64,7 +64,7 @@
                     value: 'cordova-css-reset'
                 }, {
                     name: 'None',
-                    value: 'false'
+                    value: false
                 }]
             });
 
@@ -85,7 +85,7 @@
                     value: 'bootstrap'
                 }, {
                     name: 'None',
-                    value: 'false'
+                    value: false
                 }]
             });
 
