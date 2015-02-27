@@ -24,7 +24,7 @@
                         replace: {
                             js: function (filePath) {
                                 file = Path.basename(filePath);
-                                file = file.replace('.js', '.min.js');
+                                // file = file.replace('.js', '.min.js');
                                 return '<script type="text/javascript" src="/js/vendor/' + file + '"></script>';
                             },
                             css: function (filePath) {

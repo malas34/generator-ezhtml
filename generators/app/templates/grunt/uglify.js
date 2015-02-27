@@ -3,12 +3,11 @@
 module.exports = {
     vendor: {
         files: [{
+            cwd: '',
             expand: true,
             flatten: true,
-            cwd: '',
-            ext: '.min.js',
-            src: ['tmp/vendor/**/*.js'],
-            dest: 'public/js/vendor'
+            dest: 'public/js/vendor',
+            src: ['tmp/vendor/**/*.js']
         }]
     }
 };
