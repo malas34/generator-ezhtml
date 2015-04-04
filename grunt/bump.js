@@ -6,13 +6,13 @@ module.exports = function (grunt, options) {
         options: {
             files: ['package.json'],
             updateConfigs: [],
-            commit: true,
+            commit: false,
             commitMessage: '<%= bump.subject %>',
             commitFiles: ['-a'],
             createTag: false,
             tagName: 'v%VERSION%',
             tagMessage: 'Version %VERSION%',
-            push: true,
+            push: false,
             pushTo: 'origin',
             gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
             globalReplace: false

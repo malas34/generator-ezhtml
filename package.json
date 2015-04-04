@@ -1,6 +1,6 @@
 {
   "name": "generator-ezhtml",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "Generate HTML/less/js/handlebars project structure",
   "main": "index.js",
   "scripts": {
