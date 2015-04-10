@@ -6,6 +6,7 @@ module.exports = {
             cwd: '',
             expand: true,
             flatten: true,
+            ext: '.min.js',
             dest: 'public/js/vendor',
             src: ['src/js/bower/**/*.js']
         }]

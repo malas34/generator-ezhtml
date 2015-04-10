@@ -15,7 +15,7 @@
                 ],
                 options: {
                     ignorePath: /^(\/|\.+)+(bower_components\/)/,
-                    exclude: ['unsemantic-grid-responsive-no-ie7.css', 'html5shiv.js'],
+                    exclude: ['unsemantic-grid-responsive-no-ie7.css'],
                     fileTypes: {
                         hbs: {
                             block: /(([ \t]*)<!--\s*bower:*(\S*)\s*-->)(\n|\r|.)*?(<!--\s*endbower\s*-->)/gi,
@@ -26,9 +26,15 @@
                             replace: {
                                 js: function (filePath) {
                                     file = Path.basename(filePath);
-                                    file = file.replace('.js', '.min.js');
-                                    file = '/js/vendor/' + file;
-                                    return '<script type="text/javascript" src="' + file + '"></script>';
+                                    // le placeholder de htmlshiv
+                                    // est deja place dans le header
+                                    if(file !== 'html5shiv.js'){
+                                        file = file.replace('.js', '.min.js');
+                                        file = '/js/vendor/' + file;
+                                        return '<script type="text/javascript" src="' + file + '"></script>';
+                                    } else {
+                                        return '';
+                                    }
                                 },
                                 css: function (filePath) {
                                     file = Path.basename(filePath);
