@@ -1,5 +1,16 @@
 /** -----------------------------------------------------
  *
+ * Socials Colors
+ *
+ */
+@color-rss: #f26522;
+@color-twitter: #55acee;
+@color-facebook: #3b5998;
+@color-instagram: #3f729b;
+
+
+/** -----------------------------------------------------
+ *
  * HTML
  *
  */
@@ -27,10 +38,6 @@ input::-moz-focus-inner {
  *
  */
 
-.clearfix{
-    .clearfixed();
-}
-
 .hide{
     display: none;
     visibility: hidden;
@@ -43,11 +50,11 @@ input::-moz-focus-inner {
 }
 
 .f-left{
-    .float(left);
+    float: left;
 }
 
 .f-right{
-    .float(right);
+    float: right;
 }
 
 .no-padding-h{
@@ -72,18 +79,7 @@ input::-moz-focus-inner {
 ul{
     &.clearfix{
         li{
-            .float(left);
+            .f-left();
         }
     }
 }
-
-
-/** -----------------------------------------------------
- *
- * Socials Colors
- *
- */
-@color-rss: #f26522;
-@color-twitter: #55acee;
-@color-facebook: #3b5998;
-@color-instagram: #3f729b;
