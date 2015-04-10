@@ -10,6 +10,6 @@ module.exports = {
         expand: true,
         flatten: true,
         dest: 'public/css/',
-        src: 'tmp/css/**/*.css'
+        src: 'public/css/*.css'
     }
 };

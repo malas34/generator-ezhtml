@@ -10,14 +10,10 @@ vendor:
   - uglify:vendor
   - clean:vendor
 build:
-  - tests
+  - cssmin:dev
   - less
-  - copy:css
-  - autoprefixer:dev
-  - clean:css
+  - autoprefixer
   - mustacher:dev
-compile:
-    - mustacher:dev
 default:
   - tests
   - watch

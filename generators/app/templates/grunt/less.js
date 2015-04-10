@@ -6,7 +6,7 @@ module.exports = {
     },
     dev: {
         files: {
-            "./tmp/css/styles.css": "./src/less/styles.less"
+            "./public/css/styles.css": "./src/less/styles.less"
         }
     }
 };
