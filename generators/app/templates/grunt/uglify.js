@@ -7,7 +7,7 @@ module.exports = {
             expand: true,
             flatten: true,
             dest: 'public/js/vendor',
-            src: ['tmp/vendor/**/*.js']
+            src: ['src/js/bower/**/*.js']
         }]
     }
 };
