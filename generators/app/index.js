@@ -25,6 +25,7 @@
         lodash = require('lodash'),
         slugify = require('slugify'),
         AppBones = require('appbones'),
+        pkg = require('../../package.json'),
         generators = require('yeoman-generator');
 
     eZHTMLGenerator = generators.Base.extend({
@@ -43,7 +44,7 @@
             // custom templates delimiter
             this.config.set('rdim', '%>');
             this.config.set('ldim', '<%=');
-            this.log(yosay('Hello sir, welcome to the awesome ezhtml generator!'));
+            this.log(yosay('Hello sir, welcome to the awesome ezhtml generator v' + pkg.version));
         },
 
         prompting: function () {
@@ -79,7 +80,7 @@
                 type: 'input',
                 name: 'projectdescription',
                 message: 'Project description',
-                default: 'Place your project\'s description here'
+                default: 'Project generated with Yeoman generator-ezhtml v' + pkg.version
             });
 
             prompts.push({
