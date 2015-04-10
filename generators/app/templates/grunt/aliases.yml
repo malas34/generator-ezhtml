@@ -6,7 +6,6 @@ documentation:
   - markdown
 vendor:
   - wiredep
-  - bower_main
   - cssmin:vendor
   - uglify:vendor
   - clean:vendor
