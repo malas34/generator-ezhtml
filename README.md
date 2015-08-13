@@ -1,77 +1,122 @@
-# ezHTML Yeoman Generator [![Built with Grunt][grunt-img]](http://gruntjs.com/) [![MIT License][license-img]][license-url]
+# Generator EZHTML
 
-> Yeoman generator building HTML/CSS/JS structure.
+[![Built with Grunt][grunt-img]](http://gruntjs.com/)
 
-## Install
+> http://localhost:9080<br>
+> http://localhost:9080/docs
+
+- [Top 10 Mistakes Frontend Developers Make]https://www.airpair.com/node.js/posts/top-10-mistakes-node-developers-make
+
+## NPM Command line scripts
 
 ```bash
-npm install -g generator-ezhtml
+# start server with livereload
+npm start
+npm start --debug
+npm start --verbose
+
+# Documentation
+npm run docs
+
+# Clear 'node_modules' folder
+npm run clear
+
+# Clean npm modules
+npm prune
 ```
 
-## Usage
+## Install (via NPM)
 
 ```bash
-mkdir myproject
-cd myproject
-yo ezhtml
+sudo apt-get remove node
+curl --silent --location https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install --yes nodejs-legacy nodejs
 ```
 
-## Prompts ([generator-gruntproject](http://github.com/sixertoy/generator-gruntproject))
+> [Install NodeJS via Package Manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
 
-* Project name (current folder name)
-* Repository user name (current git username)
-* Repository user email (current git user email)
-* Project description (Place your project's description here)
-* Project repository url (https://github.com/user/projectname)
-* Use Travis ? (N)
-    * Travis API key
+### Project's modules
 
-### Grunt's packages
+```bash
+npm install
+```
 
-* [**grunt bump**](https://www.npmjs.com/package/grunt-bump)
-* [**grunt jasmine-node**](https://github.com/sixertoy/grunt-jasmine-node)
-* [**grunt jshint**](https://www.npmjs.com/package/grunt-contrib-jshint)
-* [**grunt markdown**](https://www.npmjs.com/package/grunt-markdown)
-* [**load-grunt-config**](https://www.npmjs.com/package/load-grunt-config)
+### New module
 
-### Folders & Files generated
+```bash
+npm install <package_name> --save
+npm install <package_name> --save-dev
+```
 
-* .editorconfig
-* .gitattributes
-* [.gitignore](https://gist.github.com/e549b0f03494158987ef.git)
-* .jshintrc
-* .travis.yml (optional)
-* Gruntfile.js
-* package.json
-* README.md
-* CHANGELOG.md
-* jasmine-node
-* **docs:**
-    * src
-    * html
-    * page.tpl
-* **grunt:**
-    * banner.tpl
-    * aliases.yml (grunt tasks alias)
-    * bump.js
-    * jasmine_node.js
-    * jshint.js
-    * markdown.js
-* **src:**
-    * css
-    * html
-    * js
-    * less
-    * partials
-* **public:**
-    * css
-    * html
-    * js
-    * image
-* **tests:**
-    * spec.tpl
+### Globals Requirements (sudo)
+
+```bash
+npm install -g bower
+npm install -g grunt grunt-cli
+npm install -g mocha istanbul coveralls
+npm install -g install gh-markdown-cli generate-github-markdown-css
+npm install -g livereload
+```
+
+## Links
+
+### NodeJS
+
+- [NodeJS API](https://nodejs.org/api/)
+- [NPM](www.npmjs.com) | [docs](https://docs.npmjs.com)
+- [Bower](http://bower.io) | [docs](http://bower.io/docs/api/)
+- [Grunt](http://gruntjs.com) | [docs](http://gruntjs.com/api/grunt)
+
+#### Unit Tests
+
+- [Mocha](https://mochajs.org)
+- [Sinon - stub/spies/mocks](http://sinonjs.org)
+- [Supertest - AJAX Request TDD](https://www.npmjs.com/package/supertest)
+
+#### Modules
+
+- [Google Fonts Base64](https://www.npmjs.com/package/grunt-font-base64)
+- [Handlebars](http://handlebarsjs.com)
+
+##### Recommended Modules
+
+- [Most Starred Modules](https://www.npmjs.com/browse/star)
+- [A curated list of awesome lists](https://github.com/sindresorhus/awesome)
+
+##### Search
+
+- [Node Modules](http://node-modules.com)
+- [Node Zoo](http://nodezoo.com)
+- [NPM Search](http://npmsearch.com)
+
+### javascript
+
+- [MicroJS](http://microjs.com)
+
+### Icons
+
+- [Noun Project](https://thenounproject.com)
+- [Ionic Tailor](http://ionic-theme-editor.herokuapp.com)
+- [Customizr](http://customizr.net/icons/)
+
+### HTML
+
+- [Google Fonts Direct download](http://www.localfont.com)
+- [Can I Use](http://caniuse.com)
+- [HTML5 Please](http://html5please.com)
+- [Alsacreations](http://www.alsacreations.com/astuces/)
+
+### Fonts
+
+- [Fontello](http://fontello.com)
+
+### Divers
+
+- [Generate Data](http://www.generatedata.com)
+- [Regex101](https://regex101.com/#javascript)
+- [CSS2Less](http://css2less.cc)
+- [Express Middlewares](http://expressjs.com/resources/middleware.html)
+
+## Issues
 
 [grunt-img]: https://cdn.gruntjs.com/builtwith.png
-
-[license-img]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
-[license-url]: LICENSE-MIT

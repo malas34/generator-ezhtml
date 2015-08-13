@@ -1,8 +1,8 @@
 /**
- * generator-ezhtml
- * https://github.com/sixertoy/generator-ezhtml
+ * sni
  *
- * Copyright (c) 2014 sixertoy
+ *
+ * Copyright (c) 2015 Matthieu Lassalvy
  * Licensed under the MIT license.
  *
  */
@@ -10,12 +10,5 @@
 /*global module, require */
 module.exports = function (grunt) {
     'use strict';
-    // load configs
     require('load-grunt-config')(grunt);
-    /*
-     *
-     * grunt banner
-     * {data: { banner: grunt.file.read('./grunt/banner.tpl', 'utf-8')}}
-     *
-     */
 };

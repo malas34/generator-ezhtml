@@ -1,9 +1,26 @@
-tests:
-  - jshint
-  - jasmine_node
-documentation:
-  - tests
-  - markdown
+build_server:
+  description: 'Copy ExpressJS server to build folder'
+  tasks:
+    - jshint:server
+    - clean:server
+    - jshint:server
+    - copy:server
+build_css:
+  description: ''
+  tasks:
+#   - clean:css
+    - less:all
+#   - autoprefixer:all
+build_html:
+  description: 'copy html/css/js ressources to build folder'
+  tasks:
+    - clean:html
+    - mustacher:all
+build:
+  - build_server
+#  - build_js
+  - build_css
+  - build_html
 default:
-  - tests
+  - build
   - watch
